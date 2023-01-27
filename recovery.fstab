@@ -1,0 +1,25 @@
+# mount point       fstype    device                                                                flags
+/system             erofs     system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/system             ext4      system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/system_ext         erofs     system_ext                                                            flags=display="System_ext";backup=1;logical;
+/system_ext_image   emmc      system_ext                                                            flags=display="System_ext image";backup=1;flashimg=1;logical;
+/system_ext         ext4      system_ext                                                            flags=display="System_ext";backup=1;logical;
+/system_ext_image   emmc      system_ext                                                            flags=display="System_ext image";backup=1;flashimg=1;logical;
+/vendor             erofs     vendor                                                                flags=display="Vendor";backup=1;logical;
+/vendor_image       emmc      vendor                                                                flags=display="Vendor image";backup=1;flashimg=1;logical;
+/vendor             ext4      vendor                                                                flags=display="Vendor";backup=1;logical;
+/vendor_image       emmc      vendor                                                                flags=display="Vendor image";backup=1;flashimg=1;logical;
+/product            erofs     product                                                               flags=display="Product";backup=1;logical;
+/product_image      emmc      product                                                               flags=display="Product image";backup=1;flashimg=1;logical;
+/product            ext4      product                                                               flags=display="Product";backup=1;logical;
+/product_image      emmc      product                                                               flags=display="Product image";backup=1;flashimg=1;logical;
+/metadata           ext4      /dev/block/by-name/metadata                                           flags=display="Metadata";
+/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=display="Data";
+/firmware_mnt       vfat      /dev/block/bootdevice/by-name/modem                                   flags=display="Firmware_mnt";
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
+/usbotg             vfat      /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*     flags=display="Usbotg";
+none                swap      /dev/block/zram0                                                      flags=display="None";
+/persist            ext4      /dev/block/platform/soc/7c4000.sdhci/by-name/persist                  flags=display="Persist";
+/persist_image      emmc      /dev/block/platform/soc/7c4000.sdhci/by-name/persist                  flags=display="Persist image";backup=1;flashimg=1;
